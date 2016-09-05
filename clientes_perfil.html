@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Grupo  Michelagnoli CRM</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/mood.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- ///////////////////////// Fixed navbar /////////////////////////  -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./">Grupo  Michelagnoli CRM</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="clientes.html">Clientes</a></li>
+            <li><a href="agenda.html">Agenda <span class="badge">42</span></a></li>
+            <li><a href="tareas.html">Tareas <span class="badge">42</span></a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Configuración <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- cotizaciones -->
+          <div id="carousel-example-generic" class="carousel slide " data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <!-- ---------- -->
+              <div class="item active">
+                  <div class="col">
+                    Cotización <strong>Dóla US</strong>
+                  </div>
+                  <div class="col">
+                    <img src="images/flag_us.png" height="27" width="32" alt="">
+                  </div>
+                  <div class="col">
+                    Compra <strong>4000</strong>
+                  </div>
+                  <div class="col">
+                    Venta <strong>4000</strong>
+                  </div>
+              </div>
+              <!-- ---------- -->
+              <!-- ---------- -->
+              <div class="item">
+                  <div class="col">
+                    Cotización <strong>Euro UE</strong>
+                  </div>
+                  <div class="col">
+                    <img src="images/flag_eu.png" height="27" width="32" alt="">
+                  </div>
+                  <div class="col">
+                    Compra <strong>4000</strong>
+                  </div>
+                  <div class="col">
+                    Venta <strong>4000</strong>
+                  </div>
+              </div>
+              <!-- ---------- -->
+              <!-- ---------- -->
+              <div class="item">
+                  <div class="col">
+                    Cotización <strong>Real BR</strong>
+                  </div>
+                  <div class="col">
+                    <img src="images/flag_br.png" height="27" width="32" alt="">
+                  </div>
+                  <div class="col">
+                    Compra <strong>4000</strong>
+                  </div>
+                  <div class="col">
+                    Venta <strong>4000</strong>
+                  </div>
+              </div>
+              <!-- ---------- -->
+              <!-- ---------- -->
+              <div class="item">
+                  <div class="col">
+                    Cotización <strong>Peso AR</strong>
+                  </div>
+                  <div class="col">
+                    <img src="images/flag_ar.png" height="27" width="32" alt="">
+                  </div>
+                  <div class="col">
+                    Compra <strong>4000</strong>
+                  </div>
+                  <div class="col">
+                    Venta <strong>4000</strong>
+                  </div>
+              </div>
+              <!-- ---------- -->
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- cotizaciones -->
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- ///////////////////////// Fixed navbar /////////////////////////  -->
+
+    
+    
+    <div class="container theme-showcase" role="main" id="top">
+
+      <div class="page-header">
+        <ul class="nav nav-pills pull-right" role="tablist">
+          <li role="clientes" class="active"><a href="clientes_perfil.html">Perfil</a></li>
+          <li role="clientes"><a href="clientes_ventas.html">Ventas</a></li>
+          <li role="clientes"><a href="clientes_reservas.html">Reservas</a></li>
+          <li role="clientes"><a href="clientes_servicios.html">Servicios</a></li>
+          <li role="clientes"><a href="clientes_contactos.html">Contactos</a></li>
+          <li role="clientes"><a href="clientes_tareas.html">Tareas</a></li>
+        </ul>
+        <h1>Perfil de:</h1>
+      </div>
+
+
+      <div class="row">
+        <!-- -------------- -->
+        <div class="col-md-4">
+
+          <div class="panel panel-default profile">
+            <div class="panel-heading">
+              <h3 class="panel-title2 pull-right">#990238</h3>
+              <img src="images/logo_censu.png" height="29" width="180" alt="">
+            </div>
+            <div class="panel-body">
+
+              <h4>Juan Antonio Perez Gonzalez <span class="calificacion tipoA">A</span></h4>
+
+              <hr>
+              
+              <div class="form-group col-md-6">
+                <p><strong>Nro. cédula</strong><br>88377309</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>RUC</strong><br>88377309-0</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Sexo</strong><br>Masculino</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Fecha de nac.</strong><br>12/12/1980</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>E-mail</strong><br><a href="" title="">juanndo@gmail.com</a></p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Celular</strong><br>0981 222 333</p>
+              </div>
+              <div class="form-group col-md-12">
+                <p><strong>Dirección particular</strong><br>Mcal. Lopez y Tomás Goochi 890</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Teléfono particular</strong><br>021 222 333</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>País</strong><br>Paraguay</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Ciudad</strong><br>Asunción</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Barrio</strong><br>Paraguay</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Estado civil</strong><br>Casado</p>
+              </div>
+              <div class="form-group col-md-12">
+                <p><strong>Conyugue</strong><br><a href="" title="">Maria Julieta Ortega Monzón</a></p>
+              </div>
+
+              <hr class="clear" />
+
+              <div class="form-group col-md-12">
+                <p><strong>Profesión</strong><br>Abogado</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Dirección laboral</strong><br>Mcal. Lopez y Tomás Goochi 890</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Teléfono laboral</strong><br>021 222 333</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- -------------- -->
+        <!-- -------------- -->
+        <div class="col-md-4">
+
+          <div class="panel panel-default profile">
+            <div class="panel-heading">
+              <h3 class="panel-title2 pull-right">#990238</h3>
+              <img src="images/logo_censer.png" height="29" width="113" alt="">
+            </div>
+            <div class="panel-body">
+
+              <h4>Juan Antonio Perez Gonzalez <span class="calificacion tipoA">A</span></h4>
+
+              <hr>
+              
+              <div class="form-group col-md-6">
+                <p><strong>Nro. cédula</strong><br>88377309</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>RUC</strong><br>88377309-0</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Sexo</strong><br>Masculino</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Fecha de nac.</strong><br>12/12/1980</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>E-mail</strong><br><a href="" title="">juanndo@gmail.com</a></p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Celular</strong><br>0981 222 333</p>
+              </div>
+              <div class="form-group col-md-12">
+                <p><strong>Dirección particular</strong><br>Mcal. Lopez y Tomás Goochi 890</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Teléfono particular</strong><br>021 222 333</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>País</strong><br>Paraguay</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Ciudad</strong><br>Asunción</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Barrio</strong><br>Paraguay</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Estado civil</strong><br>Casado</p>
+              </div>
+              <div class="form-group col-md-12">
+                <p><strong>Conyugue</strong><br><a href="" title="">Maria Julieta Ortega Monzón</a></p>
+              </div>
+
+              <hr class="clear" />
+
+              <div class="form-group col-md-12">
+                <p><strong>Profesión</strong><br>Abogado</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Dirección laboral</strong><br>Mcal. Lopez y Tomás Goochi 890</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Teléfono laboral</strong><br>021 222 333</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- -------------- -->
+        <!-- -------------- -->
+        <div class="col-md-4">
+
+          <div class="panel panel-default profile">
+            <div class="panel-heading">
+              <h3 class="panel-title2 pull-right">#990238</h3>
+              <img src="images/logo_cr.png" height="29" width="157" alt="">
+            </div>
+            <div class="panel-body">
+
+              <h4>Juan Antonio Perez Gonzalez <span class="calificacion tipoA">A</span></h4>
+
+              <hr>
+              
+              <div class="form-group col-md-6">
+                <p><strong>Nro. cédula</strong><br>88377309</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>RUC</strong><br>88377309-0</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Sexo</strong><br>Masculino</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Fecha de nac.</strong><br>12/12/1980</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>E-mail</strong><br><a href="" title="">juanndo@gmail.com</a></p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Celular</strong><br>0981 222 333</p>
+              </div>
+              <div class="form-group col-md-12">
+                <p><strong>Dirección particular</strong><br>Mcal. Lopez y Tomás Goochi 890</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Teléfono particular</strong><br>021 222 333</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>País</strong><br>Paraguay</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Ciudad</strong><br>Asunción</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Barrio</strong><br>Paraguay</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Estado civil</strong><br>Casado</p>
+              </div>
+              <div class="form-group col-md-12">
+                <p><strong>Conyugue</strong><br><a href="" title="">Maria Julieta Ortega Monzón</a></p>
+              </div>
+
+              <hr class="clear" />
+
+              <div class="form-group col-md-12">
+                <p><strong>Profesión</strong><br>Abogado</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Dirección laboral</strong><br>Mcal. Lopez y Tomás Goochi 890</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Teléfono laboral</strong><br>021 222 333</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- -------------- -->
+
+        <!-- -------------- -->
+        <div class="col-md-12 calGral">
+          <div class="alert alert-success clear text-center" role="alert"><h3>Calificación general: <strong>A</strong></h3></div>
+        </div>
+        <!-- -------------- -->
+
+
+      </div>
+
+      
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#top">Volver arriba</a></p>
+        <p>&copy; Grupo  Michelagnoli</p>
+      </footer>
+      <!-- FOOTER -->
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

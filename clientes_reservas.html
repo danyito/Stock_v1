@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Grupo  Michelagnoli CRM</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/mood.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- ///////////////////////// Fixed navbar /////////////////////////  -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./">Grupo  Michelagnoli CRM</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="clientes.html">Clientes</a></li>
+            <li><a href="agenda.html">Agenda <span class="badge">42</span></a></li>
+            <li><a href="tareas.html">Tareas <span class="badge">42</span></a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Configuración <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- cotizaciones -->
+          <div id="carousel-example-generic" class="carousel slide " data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <!-- ---------- -->
+              <div class="item active">
+                  <div class="col">
+                    Cotización <strong>Dóla US</strong>
+                  </div>
+                  <div class="col">
+                    <img src="images/flag_us.png" height="27" width="32" alt="">
+                  </div>
+                  <div class="col">
+                    Compra <strong>4000</strong>
+                  </div>
+                  <div class="col">
+                    Venta <strong>4000</strong>
+                  </div>
+              </div>
+              <!-- ---------- -->
+              <!-- ---------- -->
+              <div class="item">
+                  <div class="col">
+                    Cotización <strong>Euro UE</strong>
+                  </div>
+                  <div class="col">
+                    <img src="images/flag_eu.png" height="27" width="32" alt="">
+                  </div>
+                  <div class="col">
+                    Compra <strong>4000</strong>
+                  </div>
+                  <div class="col">
+                    Venta <strong>4000</strong>
+                  </div>
+              </div>
+              <!-- ---------- -->
+              <!-- ---------- -->
+              <div class="item">
+                  <div class="col">
+                    Cotización <strong>Real BR</strong>
+                  </div>
+                  <div class="col">
+                    <img src="images/flag_br.png" height="27" width="32" alt="">
+                  </div>
+                  <div class="col">
+                    Compra <strong>4000</strong>
+                  </div>
+                  <div class="col">
+                    Venta <strong>4000</strong>
+                  </div>
+              </div>
+              <!-- ---------- -->
+              <!-- ---------- -->
+              <div class="item">
+                  <div class="col">
+                    Cotización <strong>Peso AR</strong>
+                  </div>
+                  <div class="col">
+                    <img src="images/flag_ar.png" height="27" width="32" alt="">
+                  </div>
+                  <div class="col">
+                    Compra <strong>4000</strong>
+                  </div>
+                  <div class="col">
+                    Venta <strong>4000</strong>
+                  </div>
+              </div>
+              <!-- ---------- -->
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- cotizaciones -->
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- ///////////////////////// Fixed navbar /////////////////////////  -->
+
+    
+    
+    <div class="container theme-showcase" role="main" id="top">
+
+      <div class="page-header">
+        <ul class="nav nav-pills pull-right" role="tablist">
+          <li role="clientes"><a href="clientes_perfil.html">Perfil</a></li>
+          <li role="clientes"><a href="clientes_ventas.html">Ventas</a></li>
+          <li role="clientes" class="active"><a href="clientes_reservas.html">Reservas</a></li>
+          <li role="clientes"><a href="clientes_servicios.html">Servicios</a></li>
+          <li role="clientes"><a href="clientes_contactos.html">Contactos</a></li>
+          <li role="clientes"><a href="clientes_tareas.html">Tareas</a></li>
+        </ul>
+        <h1>Reservas a:</h1>
+      </div>
+
+
+      <div class="row">
+        <h2 class="col-md-12">Juan Antonio Perez Gonzalez</h2>
+
+        <!-- -------------- -->
+        <div class="col-md-3">
+
+          <div class="panel panel-warning profile">
+            <div class="panel-heading">
+              <span class="glyphicon glyphicon-time glyphicon-grande pull-right" aria-hidden="true"></span>
+              <h3 class="panel-title">#8990</h3>
+            </div>
+            <div class="panel-body">
+
+              <div class="form-group col-md-6">
+                <p><strong>Fecha</strong><br>12/03/2014</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Hora</strong><br>14:00 Hs.</p>
+              </div>
+              <div class="form-group col-md-12">
+                <p><strong>Comentario</strong><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+              </div>
+              <p class="text-right"><a href="#" title="" class="btn btn-info" role="button" data-toggle="modal" data-target=".bs-mas_info-modal-sm">Mas info</a></p>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- -------------- -->
+        <!-- -------------- -->
+        <div class="col-md-3">
+
+          <div class="panel panel-success profile">
+            <div class="panel-heading">
+              <span class="glyphicon glyphicon-ok glyphicon-grande pull-right" aria-hidden="true"></span>
+              <h3 class="panel-title">#8990</h3>
+            </div>
+            <div class="panel-body">
+
+              <div class="form-group col-md-6">
+                <p><strong>Fecha</strong><br>12/03/2014</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Hora</strong><br>14:00 Hs.</p>
+              </div>
+              <div class="form-group col-md-12">
+                <p><strong>Comentario</strong><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+              </div>
+              <p class="text-right"><a href="#" title="Mas info" class="btn btn-info" role="button" data-toggle="modal" data-target=".bs-mas_info-modal-sm">Mas info</a></p>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- -------------- -->
+        
+
+        <!-- ----------------------------------------------------- -->
+        <!-- -------------------- pop mas info ------------------ -->
+        <!-- ----------------------------------------------------- -->
+        <div class="modal fade bs-mas_info-modal-sm" tabindex="-1" role="dialog" aria-labelledby="Mas info" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myLargeModalLabel">#77849<a class="anchorjs-link" href="#mySmallModalLabel"><span class="anchorjs-icon"></span></a></h4>
+              </div>
+
+              <div class="modal-body">
+                
+                <div role="tabpanel" class="clearfix">
+
+                  <div class="form-group col-md-4">
+                    <p><strong>Estado</strong><br>Activo</p>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <p><strong>Fecha</strong><br>12/02/2014</p>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <p><strong>Hora</strong><br>14:00 Hs.</p>
+                  </div>
+                  <div class="form-group col-md-8">
+                    <p><strong>Comentario</strong><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <p><strong>Vehículo</strong><br>34.009 Suzuki Swift SP 1.3 HB Naftero M/T Año 2009</p>
+                  </div>
+
+                  <hr class="clear">
+
+                  <h4>Tipo de servicio</h4>
+
+                  <ol>
+                    <li class="mb10"><strong>Electricidad</strong>
+                      <ul>
+                        <li><strong>Cambio de batería:</strong> No se enciende el auto</li>
+                        <li><strong>Ajuste de ópticas:</strong> Vibración de luces</li>
+                      </ul>
+                    </li>
+                    <li class="mb10"><strong>Servicios generales</strong>
+                      <ul>
+                        <li><strong>Servicio A:</strong> Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dolor sit amet, consectetuer </li>
+                        <li><strong>Seccion B:</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
+                      </ul>
+                    </li>
+                    <li class="mb10"><strong>Chapa y pintura</strong>
+                      <ul>
+                        <li><strong>Servicio A:</strong> Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dolor sit amet, consectetuer </li>
+                        <li><strong>Seccion B:</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
+                      </ul>
+                    </li>
+                  </ol>
+
+                </div>
+
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              </div>
+
+            </div>  
+          </div>
+        </div>
+        <!-- ----------------------------------------------------- -->
+        <!-- -------------------- pop mas info ------------------ -->
+        <!-- ----------------------------------------------------- -->
+
+      </div>
+
+      
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#top">Volver arriba</a></p>
+        <p>&copy; Grupo  Michelagnoli</p>
+      </footer>
+      <!-- FOOTER -->
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

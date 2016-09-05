@@ -1,0 +1,120 @@
+ 
+C:\Users\IDTKMARTINO\Desktop\PROYECTOS ID\CENSU\3- Construcción\Codigos\HtmlFiles
+    C:\Users\IDTKMARTINO\Desktop\PROYECTOS ID\CENSU\3- Construcción\Documentos\DT-9.4-PantallaPrincipal_ClienteVentas.doc
+    
+    <div class="container theme-showcase" role="main" id="top">
+
+      <div class="page-header">
+        <ul class="nav nav-pills pull-right" role="tablist">
+          <li role="clientes"><a href="clientes_perfil.html">Perfil</a></li>
+          <li role="clientes" class="active"><a href="clientes_ventas.html">Ventas</a></li>
+          <li role="clientes"><a href="clientes_reservas.html">Reservas</a></li>
+          <li role="clientes"><a href="clientes_servicios.html">Servicios</a></li>
+          <li role="clientes"><a href="clientes_contactos.html">Contactos</a></li>
+          <li role="clientes"><a href="clientes_tareas.html">Tareas</a></li>
+        </ul>
+        <h1>Perfil de:</h1>
+      </div>
+      <div class="row">
+        <h2 class="col-md-12">Juan Antonio Perez Gonzalez</h2>
+
+        
+        <div class="col-md-3">
+
+          <div class="panel panel-default profile">
+            <div class="panel-heading">
+              <h3 class="panel-title">Suzuki Gran Vitara</h3>
+            </div>
+            <div class="panel-body">
+
+              <div class="form-group col-md-6">
+                <p><strong>Año</strong><br>2014</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Km actual</strong><br>2.000</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Asesor de ventas</strong><br>Juan Perez Gaona</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Asesor de Servicios</strong><br>Pedro Jorge Garcette</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Asesor de Contacto</strong><br>Juan Perez Ramirez</p>
+              </div>
+              <div class="form-group col-md-6">
+                <p><strong>Fecha de compra</strong><br>12/12/2000</p>
+              </div>
+              <p class="text-center"><a href="#" title="" class="btn btn-default" role="button" data-toggle="modal" data-target=".bs-estado_cuenta-modal-lg">Estado de cuenta</a> <a href="#" title="" class="btn btn-info" role="button" data-toggle="modal" data-target=".bs-detalles-modal-lg">Detalles</a></p>
+
+            </div>
+          </div>
+
+        </div>
+        
+       
+
+        <p class="col-md-12">
+          <a href="#" title="" class="btn btn-default" role="button">Estado de cuenta <img src="images/logo_censer.png" height="15" alt=""></a> 
+          <a href="#" title="" class="btn btn-default" role="button">Estado de cuenta <img src="images/logo_cr.png" height="15" alt=""></a>
+        </p>
+
+     
+
+      </div> 
+	  
+	  
+	  
+	  
+	  
+	  
+	  " SELECT  " +
+ "   clientecrm_vehiculo.id,  " +
+ "   clientecrm_vehiculo.idclientecrm,  " +
+  "  clientecrm_vehiculo.chasis,  " +
+  "  clientecrm_vehiculo.empresa,  " +
+  "  clientecrm_vehiculo.venta,  " +
+  "  clientecrm_vehiculo.solicitud,  " +
+ "   clientecrm_vehiculo.tipo " +
+ "  FROM  " +
+  "  public.clientecrm_vehiculo " +
+  
+ " Where clientecrm_vehiculo.idclientecrm  = "
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  #region Cliente Venta
+
+        /// <summary>
+        /// recibimos IDCLIENTE CRM 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public ActionResult ClienteVenta(int id)
+        {
+            ViewBag.Nombre = "Martin Torres";
+            ViewBag.idCliCRM = id.ToString();
+
+            return View(); 
+        }
+        #endregion
+		
+		
+		
+		
+		
+		
+		
+
+      
+
+  
+     
+
+    </div>
+
+    

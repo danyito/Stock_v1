@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Grupo  Michelagnoli CRM</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/mood.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- ///////////////////////// Fixed navbar /////////////////////////  -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./">Grupo  Michelagnoli CRM</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="agenda.html">Agenda <span class="badge">42</span></a></li>
+            <li class="active"><a href="tareas.html">Tareas <span class="badge">42</span></a></li>
+            <li><a href="marketing.html">Marketing</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Configuración <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- cotizaciones -->
+          <div id="carousel-example-generic" class="carousel slide " data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <!-- ---------- -->
+              <div class="item active">
+                  <div class="col">
+                    Cotización <strong>Dóla US</strong>
+                  </div>
+                  <div class="col">
+                    <img src="images/flag_us.png" height="27" width="32" alt="">
+                  </div>
+                  <div class="col">
+                    Compra <strong>4000</strong>
+                  </div>
+                  <div class="col">
+                    Venta <strong>4000</strong>
+                  </div>
+              </div>
+              <!-- ---------- -->
+              <!-- ---------- -->
+              <div class="item">
+                  <div class="col">
+                    Cotización <strong>Euro UE</strong>
+                  </div>
+                  <div class="col">
+                    <img src="images/flag_eu.png" height="27" width="32" alt="">
+                  </div>
+                  <div class="col">
+                    Compra <strong>4000</strong>
+                  </div>
+                  <div class="col">
+                    Venta <strong>4000</strong>
+                  </div>
+              </div>
+              <!-- ---------- -->
+              <!-- ---------- -->
+              <div class="item">
+                  <div class="col">
+                    Cotización <strong>Real BR</strong>
+                  </div>
+                  <div class="col">
+                    <img src="images/flag_br.png" height="27" width="32" alt="">
+                  </div>
+                  <div class="col">
+                    Compra <strong>4000</strong>
+                  </div>
+                  <div class="col">
+                    Venta <strong>4000</strong>
+                  </div>
+              </div>
+              <!-- ---------- -->
+              <!-- ---------- -->
+              <div class="item">
+                  <div class="col">
+                    Cotización <strong>Peso AR</strong>
+                  </div>
+                  <div class="col">
+                    <img src="images/flag_ar.png" height="27" width="32" alt="">
+                  </div>
+                  <div class="col">
+                    Compra <strong>4000</strong>
+                  </div>
+                  <div class="col">
+                    Venta <strong>4000</strong>
+                  </div>
+              </div>
+              <!-- ---------- -->
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- cotizaciones -->
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- ///////////////////////// Fixed navbar /////////////////////////  -->
+
+    
+    
+    <div class="container theme-showcase" role="main" id="top">
+
+      <div class="page-header">
+        <a href="#" class="btn btn-success btn-lg pull-right" role="button" data-toggle="modal" data-target=".bs-nuevo-modal-sm">Nueva tarea</a>
+        <h1>Tareas</h1>
+      </div>
+
+      <!-- +++++++ filtro +++++++ -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <form>
+            <div class="row">
+
+              <div class="form-group col-md-2">
+                <label for="Nro. tarea">Nro. tarea</label>
+                <input type="text" class="form-control" id="Nro. tarea">
+              </div>
+
+              <div class="form-group col-md-2">
+                <label for="Tarea">Tarea</label>
+                <input type="text" class="form-control" id="Tarea">
+              </div>
+
+              <div class="form-group col-md-2">
+                <label for="Estado">Estado</label>
+                <select name="Estado" class="form-control" id="Estado">
+                  <option value="">Activo</option>
+                  <option value="">Inactivo</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-2">
+                <label for="Usuario asignado">Usuario asignado</label>
+                <input type="text" class="form-control" id="Usuario asignado">
+              </div>
+
+              <div class="form-group col-md-2 col-md-offset-2 text-right">
+                <button type="submit" class="btn btn-default btn-buscar">Buscar</button>
+              </div>
+
+            </div>
+          </form>
+
+        </div>
+      </div>
+      <!-- +++++++ filtro +++++++ -->
+
+      <div class="table-responsive">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>#Tarea</th>
+              <th width="25%">Tarea</th>
+              <th class="text-center">Estado</th>
+              <th>Usuario asignado</th>
+              <th>Fecha creación</th>
+              <th>Fecha finalización</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="warning">
+              <td><strong>9982399</strong></td>
+              <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</td>
+              <td class="text-center"><span class="glyphicon glyphicon-time glyphicon-grande" aria-hidden="true"></span></td>
+              <td>Nombre del usuario</td>
+              <td>12/12/2015</td>
+              <td>12/12/2015</td>
+              <td class="text-right"><a href="#" class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target=".bs-procesar-modal-sm">Ver detalles</a></td>
+            </tr>
+            <tr class="warning">
+              <td><strong>9982399</strong></td>
+              <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</td>
+              <td class="text-center"><span class="glyphicon glyphicon-time glyphicon-grande" aria-hidden="true"></span></td>
+              <td>Nombre del usuario</td>
+              <td>12/12/2015</td>
+              <td>12/12/2015</td>
+              <td class="text-right"><a href="#" class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target=".bs-procesar-modal-sm">Ver detalles</a></td>
+            </tr>
+            <tr class="warning">
+              <td><strong>9982399</strong></td>
+              <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</td>
+              <td class="text-center"><span class="glyphicon glyphicon-time glyphicon-grande" aria-hidden="true"></span></td>
+              <td>Nombre del usuario</td>
+              <td>12/12/2015</td>
+              <td>12/12/2015</td>
+              <td class="text-right"><a href="#" class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target=".bs-procesar-modal-sm">Ver detalles</a></td>
+            </tr>
+            <tr class="warning">
+              <td><strong>9982399</strong></td>
+              <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</td>
+              <td class="text-center"><span class="glyphicon glyphicon-time glyphicon-grande" aria-hidden="true"></span></td>
+              <td>Nombre del usuario</td>
+              <td>12/12/2015</td>
+              <td>12/12/2015</td>
+              <td class="text-right"><a href="#" class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target=".bs-procesar-modal-sm">Ver detalles</a></td>
+            </tr>
+            <tr class="success">
+              <td><strong>9982399</strong></td>
+              <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</td>
+              <td class="text-center"><span class="glyphicon glyphicon-ok glyphicon-grande" aria-hidden="true"></span></td>
+              <td>Nombre del usuario</td>
+              <td>12/12/2015</td>
+              <td>12/12/2015</td>
+              <td class="text-right"><a href="#" class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target=".bs-procesar-modal-sm">Ver detalles</a></td>
+            </tr>
+            <tr class="success">
+              <td><strong>9982399</strong></td>
+              <td>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</td>
+              <td class="text-center"><span class="glyphicon glyphicon-ok glyphicon-grande" aria-hidden="true"></span></td>
+              <td>Nombre del usuario</td>
+              <td>12/12/2015</td>
+              <td>12/12/2015</td>
+              <td class="text-right"><a href="#" class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target=".bs-procesar-modal-sm">Ver detalles</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- paginacion -->
+      <nav class="text-center">
+        <ul class="pagination">
+          <li>
+            <a href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li>
+            <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- paginacion -->
+
+
+
+      <!-- ---------------------------------------------------------- -->
+      <!-- ------------------------ agregar tarea ------------------- -->
+      <!-- ---------------------------------------------------------- -->
+      <div class="modal fade bs-nuevo-modal-sm" tabindex="-1" role="dialog" aria-labelledby="Nuevo" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <h4 class="modal-title" id="myLargeModalLabel">Nueva tarea<a class="anchorjs-link" href="#mySmallModalLabel"><span class="anchorjs-icon"></span></a></h4>
+            </div>
+
+            <div class="modal-body">
+              
+              <div role="tabpanel" class="clearfix">
+                  
+                  <div class="form-group col-md-12">
+                    <strong>Cliente</strong>
+                    <h2>Nombre del cliente 
+                    <button type="button" class="btn btn-default btn-md" aria-label="Left Align" data-toggle="collapse" data-target="#collapseFiltro" aria-expanded="false" aria-controls="collapseFiltro">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></h2>
+                  </div>
+                  
+                  <div class="collapse clear col-md-12" id="collapseFiltro">
+                 
+                    <!-- +++++++ filtro +++++++ -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <form>
+                          <div class="row">
+
+                            <div class="form-group col-md-3">
+                              <label for="Nombre">Nombre</label>
+                              <input type="text" class="form-control" id="Nombre">
+                            </div>
+
+                            <div class="form-group col-md-3">
+                              <label for="Apellido">Apellido</label>
+                              <input type="text" class="form-control" id="Apellido">
+                            </div>
+
+                            <div class="form-group col-md-2">
+                              <label for="Nro. cédula">Nro. cédula</label>
+                              <input type="text" class="form-control" id="Nro. cédula">
+                            </div>
+
+                            <div class="form-group col-md-2">
+                              <label for="RUC">RUC</label>
+                              <input type="text" class="form-control" id="RUC">
+                            </div>
+
+                            <div class="form-group col-md-2 text-right">
+                              <button type="submit" class="btn btn-default btn-buscar">Buscar</button>
+                            </div>
+
+                          </div>
+                        </form>
+                        
+                        <div class="table-responsive">
+                          <h4>Resultado de búsqueda</h4>
+                          <table class="table table-striped table-condensed table-hover">
+                            <thead>
+                              <tr>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Nro. cédula</th>
+                                <th>RUC</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td class="text-right"><a href="#" class="btn btn-default btn-xs" role="button"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+                              </tr>
+                              <tr>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td class="text-right"><a href="#" class="btn btn-default btn-xs" role="button"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+                              </tr>
+                              <tr>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td class="text-right"><a href="#" class="btn btn-default btn-xs" role="button"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+                              </tr>
+                              <tr>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td class="text-right"><a href="#" class="btn btn-default btn-xs" role="button"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+                              </tr>
+                              <tr>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td class="text-right"><a href="#" class="btn btn-default btn-xs" role="button"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+                              </tr>
+                              <tr>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                                <td class="text-right"><a href="#" class="btn btn-default btn-xs" role="button"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                        <!-- paginacion -->
+                        <nav class="text-center">
+                          <ul class="pagination pagination-sm">
+                            <li>
+                              <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                              <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                        <!-- paginacion -->
+                  
+                    </div>
+                    <!-- +++++++ filtro +++++++ -->
+
+                  </div>
+                </div>
+                
+
+                <div class="form-group col-md-12">
+                  <label for="Nro. tarea">Nro. tarea</label>
+                  <select name="" class="form-control">
+                    <option value="">Seleccionar</option>
+                  </select>
+                </div>
+
+
+                <h4 class="col-md-12">Ingresar datos adicionales de la tarea</h4>
+                
+                <div class="form-group col-md-4">
+                  <label for="Nro. tarea">Select</label>
+                  <select name="" class="form-control">
+                    <option value="">Seleccionar</option>
+                  </select>
+                </div>
+
+                <div class="col-md-4">
+                  <label>Ejemplo checkbox</label><br>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+                  </label>
+                </div>
+
+                <div class="col-md-4">
+                  <label>Ejemplo radio</label><br>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+                  </label>
+                </div>
+
+                <div class="form-group col-md-12">
+                  <label for="Comentarios">Comentarios</label>
+                  <textarea name="" rows="5" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group col-md-12">
+                  <label for="exampleInputFile">Archivo</label>
+                  <input type="file" id="exampleInputFile">
+                  <p class="help-block">Archivos permitidos .DOC, .XLS, .JPG con un peso máximo de 2MB.</p>
+                </div>
+
+
+              </div>
+
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Guardar</button>
+            </div>
+
+          </div>  
+        </div>
+      </div>
+      <!-- ---------------------------------------------------------- -->
+      <!-- ----------------------- agregar tarea -------------------- -->
+      <!-- ---------------------------------------------------------- -->
+
+      <!-- ---------------------------------------------------------- -->
+      <!-- ----------------------- procesar tarea ------------------- -->
+      <!-- ---------------------------------------------------------- -->
+      <div class="modal fade bs-procesar-modal-sm" tabindex="-1" role="dialog" aria-labelledby="Nuevo" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <h4 class="modal-title" id="myLargeModalLabel">Detalles de la tarea<a class="anchorjs-link" href="#mySmallModalLabel"><span class="anchorjs-icon"></span></a></h4>
+            </div>
+
+            <div class="modal-body">
+              
+              <div role="tabpanel" class="clearfix">
+                  
+                  <h4 class="col-md-12">Datos del cliente y tarea</h4>
+                  <div class="form-group col-md-4">
+                    <p><strong>Nombre del cliente</strong><br>Juan José Paso Cohen</p>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <p><strong>CI Nro.</strong><br>0000000</p>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <p><strong>Tarea</strong><br>Solicitud de respuesto</p>
+                  </div>
+
+                  <h4 class="col-md-12">Información adicional</h4>
+                  <div class="form-group col-md-4">
+                    <p><strong>Nombre del respuesto</strong><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <p><strong>Finalidad</strong><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="Comentario">Comentario</label>
+                    <textarea name="" class="form-control" rows="3"></textarea>
+                  </div>
+
+                  <h4 class="col-md-12">Eventos</h4>
+                  <div class="table-responsive col-md-12">
+                    <table class="table table-striped table-condensed table-hover">
+                      <thead>
+                        <tr>
+                          <th>Fecha creación</th>
+                          <th>Usuario creación</th>
+                          <th>Comentario</th>
+                          <th>Estado tarea</th>
+                          <th>Archivo adjunto</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>data</td>
+                          <td>data</td>
+                          <td>data</td>
+                          <td>data</td>
+                          <td>data</td>
+                        </tr>
+                        <tr>
+                          <td>data</td>
+                          <td>data</td>
+                          <td>data</td>
+                          <td>data</td>
+                          <td>data</td>
+                        </tr>
+                        <tr>
+                          <td>data</td>
+                          <td>data</td>
+                          <td>data</td>
+                          <td>data</td>
+                          <td>data</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <!-- paginacion -->
+                  <nav class="text-center">
+                    <ul class="pagination pagination-sm">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <!-- paginacion -->
+
+                  <h4 class="col-md-12">Adjuntar archivo</h4>
+                  <div class="form-group col-md-12">
+                    <label for="exampleInputFile">Archivo</label>
+                    <input type="file" id="exampleInputFile">
+                    <p class="help-block">Archivos permitidos .DOC, .XLS, .JPG con un peso máximo de 2MB.</p>
+                  </div>
+
+
+              </div>
+
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Rechazar</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Procesar</button>
+            </div>
+
+          </div>  
+        </div>
+      </div>
+      <!-- ---------------------------------------------------------- -->
+      <!-- ----------------------- procesar tarea ------------------- -->
+      <!-- ---------------------------------------------------------- -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#top">Volver arriba</a></p>
+        <p>&copy; Grupo  Michelagnoli</p>
+      </footer>
+      <!-- FOOTER -->
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
